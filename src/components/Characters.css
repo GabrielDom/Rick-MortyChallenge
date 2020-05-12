@@ -123,11 +123,18 @@ footer button {
   .personaje p {
     font-size: 0.8rem;
   }
+
+  footer {
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .personajes {
     width: 90%;
+  }
+  footer {
+    left: 0;
   }
 }
 
