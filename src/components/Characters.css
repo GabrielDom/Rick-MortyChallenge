@@ -33,7 +33,7 @@
 
 .personaje h3 {
   text-align: center;
-  font-size: 23px;
+  font-size: 22px;
   width: 100%;
   margin-bottom: 0;
 }
@@ -64,7 +64,7 @@
 
 .personaje p {
   display: inline;
-  font-size: 0.7rem;
+  font-size: 12px;
   margin-left: auto;
   color: #5d3277;
 }
