@@ -10,19 +10,6 @@ export default class Characters extends Component {
     page: 1,
   };
 
-  // async componentDidMount() {
-  //   const url = "https://rickandmortyapi.com/api/character/";
-  //   const response = await fetch(url);
-  //   const data = await response.json();
-
-  //   this.setState({
-  //     character: data.results,
-  //     loading: false,
-  //     prev: data.info.prev,
-  //     next: data.info.next,
-  //   });
-  // }
-
   componentDidMount() {
     this.fetchApi();
   }

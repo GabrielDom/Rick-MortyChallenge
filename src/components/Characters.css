@@ -98,7 +98,12 @@ footer button {
 
 .btn:hover {
   color: #dddddd;
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  /* background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); */
+  background-image: linear-gradient(
+    to top,
+    rgba(21, 219, 149, 1) 0%,
+    rgb(84, 90, 167) 100%
+  );
   transition: all 0.5s ease-out;
 }
 
