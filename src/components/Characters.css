@@ -1,0 +1,169 @@
+.personajes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.personaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(221, 221, 221, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(221, 221, 221, 1);
+  box-shadow: 0px 0px 10px 0px rgba(221, 221, 221, 1);
+  padding: 0 5px;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.personaje img {
+  width: 65%;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.personaje h3 {
+  text-align: center;
+  font-size: 23px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.personaje ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.personaje ul li {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid hsla(277, 41%, 33%, 1);
+}
+
+.personaje ul li:last-child {
+  border: none;
+}
+
+.personaje span {
+  margin-right: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.personaje p {
+  display: inline;
+  font-size: 0.7rem;
+  margin-left: auto;
+  color: #5d3277;
+}
+
+.personaje i {
+  font-size: 25px;
+  margin-left: 5px;
+  min-width: 30px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 155%;
+}
+
+footer button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #5d3277;
+  background-color: #dddddd;
+  outline: none;
+  transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+  color: #dddddd;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 425px) {
+  .personajes {
+    grid-template-columns: 1fr;
+    margin: 10px auto;
+  }
+
+  .personaje img {
+    width: 55%;
+  }
+
+  .personaje h3 {
+    margin-top: 5px;
+  }
+
+  .personaje span {
+    font-size: 0.9rem;
+  }
+
+  .personaje p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .personajes {
+    width: 90%;
+  }
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #dddddd;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
